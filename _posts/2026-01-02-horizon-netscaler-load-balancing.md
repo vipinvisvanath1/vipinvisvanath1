@@ -137,6 +137,8 @@ Edit locked.properties on each Connection Server to allow load-balanced access.
 
 ## Analyzing Omnissa Horizon Client Traffic Using nstcpdump on Citrix ADC
 
+Client IP - 192.168.1.5
+
 <img width="1612" height="802" alt="image" src="https://github.com/user-attachments/assets/a3bdfb2d-887b-405f-929a-71de65bf0dad" />
 
 
