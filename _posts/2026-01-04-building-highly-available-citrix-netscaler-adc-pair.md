@@ -135,7 +135,7 @@ On Node 2, HA status now changed to Primatry as shown below
 
 
 
-To validate High Availability behavior at the network level, nstcpdump.sh was executed simultaneously on both NetScaler nodes while Horizon client traffic was generated. As shown above, client traffic destined for the VIP (192.168.1.45:443) is captured only on the active node (NSVPX-PROD-02). The passive node (NSVPX-PROD-01) does not receive any client traffic, confirming that VIP ownership and data-plane processing are exclusive to the active HA node.
+To validate High Availability behavior at the network level, nstcpdump.sh was executed simultaneously on both NetScaler nodes while Horizon client traffic was generated. As shown below, client traffic destined for the VIP (192.168.1.45:443) is captured only on the active node (NSVPX-PROD-02). The passive node (NSVPX-PROD-01) does not receive any client traffic, confirming that VIP ownership and data-plane processing are exclusive to the active HA node.
 
 
 
