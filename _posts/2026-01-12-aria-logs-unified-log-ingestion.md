@@ -122,8 +122,29 @@ Select AriaLogs-Policy created earlier and click on Bind.
 directory=C:\ProgramData\VMware\VDM\logs
 include=log-*;debug-*
 exclude=pcoip_perf*.txt;v4v*.log;wsnm_starts.txt
-
+```
 - Restart VMware Aria Operations for Logs Agent service.
+
+- Login from Horizon client to generate traffic.
+
+  <img width="1593" height="705" alt="image" src="https://github.com/user-attachments/assets/87bbffd8-1b90-4c6e-804d-042e3f8fc53f" />
+
+- Horizon connection server started forwarding logs to Aria Operations for Logs.
+
+<img width="1917" height="841" alt="image" src="https://github.com/user-attachments/assets/c324694e-c106-4044-b19d-3a33b155b8d5" />
+
+### Horizon Login Failure: "Loading Failed" Error
+
+- We get Loading Failed on Horizon client, Aria captures event bursts exactly when the client attempts login.
+
+<img width="1596" height="593" alt="image" src="https://github.com/user-attachments/assets/96de9159-364a-4b39-b90e-6a87f02cc3b8" />
+
+
+
+
+
+
+
 
 
 
