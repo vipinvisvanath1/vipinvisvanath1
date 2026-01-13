@@ -91,5 +91,41 @@ Select AriaLogs-Policy created earlier and click on Bind.
 
 ## Omnissa Horizon Configuration Steps
 
+- Login to ARIA Operations for Logs console and navigate to Management > Agents on the left pane and click on Download VMware Aria Operations for Logs Agent Version 8.18.0.
+
+  <img width="1916" height="857" alt="image" src="https://github.com/user-attachments/assets/4faf0785-595e-4054-9ef3-c568b7fb1265" />
+
+
+- Run the installer on the Horizon connection server
+
+  <img width="1023" height="630" alt="image" src="https://github.com/user-attachments/assets/afaea626-2cd7-4832-b3e9-e19a8067b85f" />
+
+
+- Provide the ARIA Operation for Logs server IP address
+
+  <img width="635" height="498" alt="image" src="https://github.com/user-attachments/assets/369fed91-4b5b-4f86-ac5e-1ee03b2c0d63" />
+
+- Navigate to C:\ProgramData\VMware\Log Insight Agent and edit the liagent.ini file.
+
+<img width="865" height="323" alt="image" src="https://github.com/user-attachments/assets/978147a2-0c20-4e62-90f2-df3076c57e20" />
+
+
+
+- proto=cfapi
+- port=9543
+- ssl=yes
+  
+- Add the following to the file.
+  
+```ini
+[filelog|HorizonViewCS]
+directory=C:\ProgramData\VMware\VDM\logs
+include=log-*;debug-*
+exclude=pcoip_perf*.txt;v4v*.log;wsnm_starts.txt
+
+- Restart VMware Aria Operations for Logs Agent service.
+
+
+
 
 
