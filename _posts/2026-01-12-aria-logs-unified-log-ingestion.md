@@ -139,6 +139,13 @@ exclude=pcoip_perf*.txt;v4v*.log;wsnm_starts.txt
 
 <img width="1596" height="593" alt="image" src="https://github.com/user-attachments/assets/96de9159-364a-4b39-b90e-6a87f02cc3b8" />
 
+##
+<img width="1918" height="863" alt="image" src="https://github.com/user-attachments/assets/9068be16-dbcf-4312-9cb2-4f1418e1d2aa" />
+
+
+
+
+#### While this blog focuses on ingesting logs from Citrix NetScaler and Omnissa Horizon, VMware Aria Operations for Logs supports the integration of additional components across the VDI stack, including Horizon Agents, desktop operating systems, and backend infrastructure. Expanding log ingestion in this manner enables deeper correlation and end-to-end visibility.
 
 
 
